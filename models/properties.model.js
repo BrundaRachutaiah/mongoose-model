@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const propertiesSchema = new mongoose.Schema({
+const stayPropertiesSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true
@@ -37,6 +37,6 @@ const propertiesSchema = new mongoose.Schema({
     timestamps: true
 })
 
-const properties = mongoose.model('properties', propertiesSchema)
+const stayProperties = mongoose.model('properties', stayPropertiesSchema)
 
-module.exports = properties
+module.exports = stayProperties
